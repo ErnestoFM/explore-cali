@@ -1,0 +1,862 @@
+2026-02-27 18:49:30 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.explorecalijpa.ExplorecaliJpaApplicationTests]: ExplorecaliJpaApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-27 18:49:30 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.explorecalijpa.ExplorecaliJpaApplication for test class com.example.explorecalijpa.ExplorecaliJpaApplicationTests
+2026-02-27 18:49:31 INFO  [main] c.e.e.ExplorecaliJpaApplicationTests - Starting ExplorecaliJpaApplicationTests using Java 21.0.2 with PID 52112 (started by hatue in C:\Users\hatue\Documents\microservicios\explorecali-jpa\explorecali-jpa)
+2026-02-27 18:49:31 DEBUG [main] c.e.e.ExplorecaliJpaApplicationTests - Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-02-27 18:49:31 INFO  [main] c.e.e.ExplorecaliJpaApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-02-27 18:49:34 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27 18:49:34 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 192 ms. Found 3 JPA repository interfaces.
+2026-02-27 18:49:36 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-27 18:49:36 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:30e2ede7-7879-4e59-b62a-2426c64e09a5 user=SA
+2026-02-27 18:49:36 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-27 18:49:36 INFO  [main] o.f.c.i.license.VersionPrinter - Flyway Community Edition 9.22.3 by Redgate
+2026-02-27 18:49:36 INFO  [main] o.f.c.i.license.VersionPrinter - See release notes here: https://rd.gt/416ObMi
+2026-02-27 18:49:36 INFO  [main] o.f.c.i.license.VersionPrinter - 
+2026-02-27 18:49:37 INFO  [main] org.flywaydb.core.FlywayExecutor - Database: jdbc:h2:mem:30e2ede7-7879-4e59-b62a-2426c64e09a5 (H2 2.2)
+2026-02-27 18:49:37 WARN  [main] o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2026-02-27 18:49:37 INFO  [main] o.f.c.i.s.JdbcTableSchemaHistory - Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-02-27 18:49:37 INFO  [main] o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.042s)
+2026-02-27 18:49:37 INFO  [main] o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-02-27 18:49:37 INFO  [main] o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+2026-02-27 18:49:37 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.1 - CreateTourSchema"
+2026-02-27 18:49:37 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.2 - AddTours"
+2026-02-27 18:49:37 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.3 - CreateTourRatingSchema"
+2026-02-27 18:49:37 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.4 - AddTourRatings"
+2026-02-27 18:49:37 INFO  [main] o.f.core.internal.command.DbMigrate - Successfully applied 4 migrations to schema "PUBLIC", now at version v1.4 (execution time 00:00.033s)
+2026-02-27 18:49:37 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-27 18:49:37 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-27 18:49:37 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-27 18:49:38 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27 18:49:39 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27 18:49:39 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27 18:49:41 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27 18:49:43 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-02-27 18:49:43 INFO  [main] c.e.e.ExplorecaliJpaApplicationTests - Started ExplorecaliJpaApplicationTests in 12.959 seconds (process running for 14.749)
+2026-02-27 18:49:46 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.explorecalijpa.web.TourRatingControllerTest]: TourRatingControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-27 18:49:46 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.explorecalijpa.ExplorecaliJpaApplication for test class com.example.explorecalijpa.web.TourRatingControllerTest
+2026-02-27 18:49:46 INFO  [main] c.e.e.web.TourRatingControllerTest - Starting TourRatingControllerTest using Java 21.0.2 with PID 52112 (started by hatue in C:\Users\hatue\Documents\microservicios\explorecali-jpa\explorecali-jpa)
+2026-02-27 18:49:46 DEBUG [main] c.e.e.web.TourRatingControllerTest - Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-02-27 18:49:46 INFO  [main] c.e.e.web.TourRatingControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-02-27 18:49:47 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27 18:49:48 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 3 JPA repository interfaces.
+2026-02-27 18:49:49 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 0 (http)
+2026-02-27 18:49:49 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-27 18:49:49 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-27 18:49:49 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-27 18:49:49 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2639 ms
+2026-02-27 18:49:49 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-02-27 18:49:49 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:c79446ed-4355-4b69-9d16-755d4464b859 user=SA
+2026-02-27 18:49:49 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-02-27 18:49:49 INFO  [main] org.flywaydb.core.FlywayExecutor - Database: jdbc:h2:mem:c79446ed-4355-4b69-9d16-755d4464b859 (H2 2.2)
+2026-02-27 18:49:49 WARN  [main] o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2026-02-27 18:49:49 INFO  [main] o.f.c.i.s.JdbcTableSchemaHistory - Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-02-27 18:49:49 INFO  [main] o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.013s)
+2026-02-27 18:49:49 INFO  [main] o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-02-27 18:49:49 INFO  [main] o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+2026-02-27 18:49:50 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.1 - CreateTourSchema"
+2026-02-27 18:49:50 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.2 - AddTours"
+2026-02-27 18:49:50 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.3 - CreateTourRatingSchema"
+2026-02-27 18:49:50 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.4 - AddTourRatings"
+2026-02-27 18:49:50 INFO  [main] o.f.core.internal.command.DbMigrate - Successfully applied 4 migrations to schema "PUBLIC", now at version v1.4 (execution time 00:00.047s)
+2026-02-27 18:49:50 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-27 18:49:50 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-27 18:49:50 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27 18:49:50 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27 18:49:50 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27 18:49:50 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27 18:49:51 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-02-27 18:49:52 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 28025 (http) with context path ''
+2026-02-27 18:49:52 INFO  [main] c.e.e.web.TourRatingControllerTest - Started TourRatingControllerTest in 5.463 seconds (process running for 23.061)
+2026-02-27 18:49:52 INFO  [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-27 18:49:52 INFO  [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-27 18:49:52 INFO  [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-02-27 18:49:52 ERROR [http-nio-auto-1-exec-1] c.e.e.e.GlobalExceptionHandler - Caught Exception
+jakarta.validation.ConstraintViolationException: null
+	at com.example.explorecalijpa.service.TourRatingService.lookupRatings(TourRatingService.java:77)
+	at com.example.explorecalijpa.controller.TourRatingController.getALlRatingForTour(TourRatingController.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-02-27 18:49:53 WARN  [http-nio-auto-1-exec-4] o.s.web.servlet.PageNotFound - Request method 'GET' is not supported
+2026-02-27 18:49:53 WARN  [http-nio-auto-1-exec-6] o.s.web.servlet.PageNotFound - Request method 'POST' is not supported
+2026-02-27 18:49:53 ERROR [http-nio-auto-1-exec-8] c.e.e.e.GlobalExceptionHandler - Caught Exception
+java.lang.NullPointerException: Cannot invoke "com.example.explorecalijpa.model.TourRating.getScore()" because "entity" is null
+	at com.example.explorecalijpa.dto.RatingDto.<init>(RatingDto.java:43)
+	at com.example.explorecalijpa.controller.TourRatingController.updateWithPut(TourRatingController.java:58)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-02-27 18:49:53 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27 18:49:53 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-27 18:49:53 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-27 18:49:53 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27 18:49:53 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-02-27 18:49:53 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-02-27 18:55:05 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.explorecalijpa.ExplorecaliJpaApplicationTests]: ExplorecaliJpaApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-27 18:55:06 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.explorecalijpa.ExplorecaliJpaApplication for test class com.example.explorecalijpa.ExplorecaliJpaApplicationTests
+2026-02-27 18:55:07 INFO  [main] c.e.e.ExplorecaliJpaApplicationTests - Starting ExplorecaliJpaApplicationTests using Java 21.0.2 with PID 15280 (started by hatue in C:\Users\hatue\Documents\microservicios\explorecali-jpa\explorecali-jpa)
+2026-02-27 18:55:07 DEBUG [main] c.e.e.ExplorecaliJpaApplicationTests - Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-02-27 18:55:07 INFO  [main] c.e.e.ExplorecaliJpaApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-02-27 18:55:10 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27 18:55:10 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 174 ms. Found 3 JPA repository interfaces.
+2026-02-27 18:55:12 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-27 18:55:13 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:2e9b1369-4e22-4228-bf39-37bc0b84fb24 user=SA
+2026-02-27 18:55:13 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-27 18:55:13 INFO  [main] o.f.c.i.license.VersionPrinter - Flyway Community Edition 9.22.3 by Redgate
+2026-02-27 18:55:13 INFO  [main] o.f.c.i.license.VersionPrinter - See release notes here: https://rd.gt/416ObMi
+2026-02-27 18:55:13 INFO  [main] o.f.c.i.license.VersionPrinter - 
+2026-02-27 18:55:13 INFO  [main] org.flywaydb.core.FlywayExecutor - Database: jdbc:h2:mem:2e9b1369-4e22-4228-bf39-37bc0b84fb24 (H2 2.2)
+2026-02-27 18:55:13 WARN  [main] o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2026-02-27 18:55:13 INFO  [main] o.f.c.i.s.JdbcTableSchemaHistory - Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-02-27 18:55:13 INFO  [main] o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.035s)
+2026-02-27 18:55:13 INFO  [main] o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-02-27 18:55:13 INFO  [main] o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+2026-02-27 18:55:13 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.1 - CreateTourSchema"
+2026-02-27 18:55:13 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.2 - AddTours"
+2026-02-27 18:55:13 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.3 - CreateTourRatingSchema"
+2026-02-27 18:55:13 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.4 - AddTourRatings"
+2026-02-27 18:55:13 INFO  [main] o.f.core.internal.command.DbMigrate - Successfully applied 4 migrations to schema "PUBLIC", now at version v1.4 (execution time 00:00.038s)
+2026-02-27 18:55:13 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-27 18:55:13 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-27 18:55:14 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-27 18:55:14 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27 18:55:15 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27 18:55:15 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27 18:55:17 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27 18:55:20 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-02-27 18:55:20 INFO  [main] c.e.e.ExplorecaliJpaApplicationTests - Started ExplorecaliJpaApplicationTests in 13.665 seconds (process running for 16.353)
+2026-02-27 18:55:23 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.explorecalijpa.web.TourRatingControllerTest]: TourRatingControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-27 18:55:23 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.explorecalijpa.ExplorecaliJpaApplication for test class com.example.explorecalijpa.web.TourRatingControllerTest
+2026-02-27 18:55:23 INFO  [main] c.e.e.web.TourRatingControllerTest - Starting TourRatingControllerTest using Java 21.0.2 with PID 15280 (started by hatue in C:\Users\hatue\Documents\microservicios\explorecali-jpa\explorecali-jpa)
+2026-02-27 18:55:23 DEBUG [main] c.e.e.web.TourRatingControllerTest - Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-02-27 18:55:23 INFO  [main] c.e.e.web.TourRatingControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-02-27 18:55:24 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27 18:55:24 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 3 JPA repository interfaces.
+2026-02-27 18:55:25 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 0 (http)
+2026-02-27 18:55:25 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-27 18:55:25 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-27 18:55:25 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-27 18:55:25 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2506 ms
+2026-02-27 18:55:26 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-02-27 18:55:26 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:82fed992-a5ae-4156-9058-af3e6a39d71e user=SA
+2026-02-27 18:55:26 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-02-27 18:55:26 INFO  [main] org.flywaydb.core.FlywayExecutor - Database: jdbc:h2:mem:82fed992-a5ae-4156-9058-af3e6a39d71e (H2 2.2)
+2026-02-27 18:55:26 WARN  [main] o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2026-02-27 18:55:26 INFO  [main] o.f.c.i.s.JdbcTableSchemaHistory - Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-02-27 18:55:26 INFO  [main] o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.013s)
+2026-02-27 18:55:26 INFO  [main] o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-02-27 18:55:26 INFO  [main] o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+2026-02-27 18:55:26 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.1 - CreateTourSchema"
+2026-02-27 18:55:26 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.2 - AddTours"
+2026-02-27 18:55:26 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.3 - CreateTourRatingSchema"
+2026-02-27 18:55:26 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.4 - AddTourRatings"
+2026-02-27 18:55:26 INFO  [main] o.f.core.internal.command.DbMigrate - Successfully applied 4 migrations to schema "PUBLIC", now at version v1.4 (execution time 00:00.041s)
+2026-02-27 18:55:26 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-27 18:55:26 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-27 18:55:26 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27 18:55:26 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27 18:55:26 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27 18:55:26 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27 18:55:27 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-02-27 18:55:28 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 21095 (http) with context path ''
+2026-02-27 18:55:28 INFO  [main] c.e.e.web.TourRatingControllerTest - Started TourRatingControllerTest in 5.127 seconds (process running for 24.347)
+2026-02-27 18:55:28 INFO  [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-27 18:55:28 INFO  [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-27 18:55:28 INFO  [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-02-27 18:55:28 ERROR [http-nio-auto-1-exec-1] c.e.e.e.GlobalExceptionHandler - Caught Exception
+jakarta.validation.ConstraintViolationException: null
+	at com.example.explorecalijpa.service.TourRatingService.lookupRatings(TourRatingService.java:77)
+	at com.example.explorecalijpa.controller.TourRatingController.getALlRatingForTour(TourRatingController.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-02-27 18:55:29 WARN  [http-nio-auto-1-exec-4] o.s.web.servlet.PageNotFound - Request method 'GET' is not supported
+2026-02-27 18:55:29 WARN  [http-nio-auto-1-exec-6] o.s.web.servlet.PageNotFound - Request method 'POST' is not supported
+2026-02-27 18:55:29 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27 18:55:29 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-27 18:55:29 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-27 18:55:29 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27 18:55:29 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-02-27 18:55:29 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-02-27 18:57:59 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.explorecalijpa.ExplorecaliJpaApplicationTests]: ExplorecaliJpaApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-27 18:57:59 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.explorecalijpa.ExplorecaliJpaApplication for test class com.example.explorecalijpa.ExplorecaliJpaApplicationTests
+2026-02-27 18:58:00 INFO  [main] c.e.e.ExplorecaliJpaApplicationTests - Starting ExplorecaliJpaApplicationTests using Java 21.0.2 with PID 56056 (started by hatue in C:\Users\hatue\Documents\microservicios\explorecali-jpa\explorecali-jpa)
+2026-02-27 18:58:00 DEBUG [main] c.e.e.ExplorecaliJpaApplicationTests - Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-02-27 18:58:00 INFO  [main] c.e.e.ExplorecaliJpaApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-02-27 18:58:03 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27 18:58:03 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 149 ms. Found 3 JPA repository interfaces.
+2026-02-27 18:58:05 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-27 18:58:05 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:78eb8bb1-3ae1-4ee9-93f4-5006bfedb3a5 user=SA
+2026-02-27 18:58:05 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-27 18:58:06 INFO  [main] o.f.c.i.license.VersionPrinter - Flyway Community Edition 9.22.3 by Redgate
+2026-02-27 18:58:06 INFO  [main] o.f.c.i.license.VersionPrinter - See release notes here: https://rd.gt/416ObMi
+2026-02-27 18:58:06 INFO  [main] o.f.c.i.license.VersionPrinter - 
+2026-02-27 18:58:06 INFO  [main] org.flywaydb.core.FlywayExecutor - Database: jdbc:h2:mem:78eb8bb1-3ae1-4ee9-93f4-5006bfedb3a5 (H2 2.2)
+2026-02-27 18:58:06 WARN  [main] o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2026-02-27 18:58:06 INFO  [main] o.f.c.i.s.JdbcTableSchemaHistory - Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-02-27 18:58:06 INFO  [main] o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.086s)
+2026-02-27 18:58:06 INFO  [main] o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-02-27 18:58:06 INFO  [main] o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+2026-02-27 18:58:06 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.1 - CreateTourSchema"
+2026-02-27 18:58:06 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.2 - AddTours"
+2026-02-27 18:58:06 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.3 - CreateTourRatingSchema"
+2026-02-27 18:58:06 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.4 - AddTourRatings"
+2026-02-27 18:58:06 INFO  [main] o.f.core.internal.command.DbMigrate - Successfully applied 4 migrations to schema "PUBLIC", now at version v1.4 (execution time 00:00.059s)
+2026-02-27 18:58:06 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-27 18:58:07 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-27 18:58:07 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-27 18:58:07 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27 18:58:08 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27 18:58:08 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27 18:58:10 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27 18:58:14 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-02-27 18:58:14 INFO  [main] c.e.e.ExplorecaliJpaApplicationTests - Started ExplorecaliJpaApplicationTests in 14.213 seconds (process running for 16.566)
+2026-02-27 18:58:16 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.explorecalijpa.web.TourRatingControllerTest]: TourRatingControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-27 18:58:16 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.explorecalijpa.ExplorecaliJpaApplication for test class com.example.explorecalijpa.web.TourRatingControllerTest
+2026-02-27 18:58:16 INFO  [main] c.e.e.web.TourRatingControllerTest - Starting TourRatingControllerTest using Java 21.0.2 with PID 56056 (started by hatue in C:\Users\hatue\Documents\microservicios\explorecali-jpa\explorecali-jpa)
+2026-02-27 18:58:16 DEBUG [main] c.e.e.web.TourRatingControllerTest - Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-02-27 18:58:16 INFO  [main] c.e.e.web.TourRatingControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-02-27 18:58:17 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27 18:58:17 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 3 JPA repository interfaces.
+2026-02-27 18:58:19 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 0 (http)
+2026-02-27 18:58:19 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-27 18:58:19 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-27 18:58:19 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-27 18:58:19 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3051 ms
+2026-02-27 18:58:19 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-02-27 18:58:19 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:e3fa2c43-c813-4b93-b116-898aa632e162 user=SA
+2026-02-27 18:58:19 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-02-27 18:58:20 INFO  [main] org.flywaydb.core.FlywayExecutor - Database: jdbc:h2:mem:e3fa2c43-c813-4b93-b116-898aa632e162 (H2 2.2)
+2026-02-27 18:58:20 WARN  [main] o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2026-02-27 18:58:20 INFO  [main] o.f.c.i.s.JdbcTableSchemaHistory - Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-02-27 18:58:20 INFO  [main] o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.016s)
+2026-02-27 18:58:20 INFO  [main] o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-02-27 18:58:20 INFO  [main] o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+2026-02-27 18:58:20 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.1 - CreateTourSchema"
+2026-02-27 18:58:20 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.2 - AddTours"
+2026-02-27 18:58:20 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.3 - CreateTourRatingSchema"
+2026-02-27 18:58:20 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.4 - AddTourRatings"
+2026-02-27 18:58:20 INFO  [main] o.f.core.internal.command.DbMigrate - Successfully applied 4 migrations to schema "PUBLIC", now at version v1.4 (execution time 00:00.033s)
+2026-02-27 18:58:20 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-27 18:58:20 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-27 18:58:20 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27 18:58:20 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27 18:58:20 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27 18:58:21 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27 18:58:22 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-02-27 18:58:22 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 4373 (http) with context path ''
+2026-02-27 18:58:22 INFO  [main] c.e.e.web.TourRatingControllerTest - Started TourRatingControllerTest in 6.744 seconds (process running for 25.115)
+2026-02-27 18:58:23 INFO  [http-nio-auto-1-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-27 18:58:23 INFO  [http-nio-auto-1-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-27 18:58:23 INFO  [http-nio-auto-1-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-02-27 18:58:23 ERROR [http-nio-auto-1-exec-2] c.e.e.e.GlobalExceptionHandler - Caught Exception
+jakarta.validation.ConstraintViolationException: null
+	at com.example.explorecalijpa.service.TourRatingService.lookupRatings(TourRatingService.java:77)
+	at com.example.explorecalijpa.controller.TourRatingController.getALlRatingForTour(TourRatingController.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-02-27 18:58:24 WARN  [http-nio-auto-1-exec-4] o.s.web.servlet.PageNotFound - Request method 'GET' is not supported
+2026-02-27 18:58:24 WARN  [http-nio-auto-1-exec-6] o.s.web.servlet.PageNotFound - Request method 'POST' is not supported
+2026-02-27 18:58:24 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27 18:58:24 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-27 18:58:24 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-27 18:58:24 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27 18:58:24 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-02-27 18:58:24 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-02-27 19:02:08 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.explorecalijpa.ExplorecaliJpaApplicationTests]: ExplorecaliJpaApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-27 19:02:08 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.explorecalijpa.ExplorecaliJpaApplication for test class com.example.explorecalijpa.ExplorecaliJpaApplicationTests
+2026-02-27 19:02:09 INFO  [main] c.e.e.ExplorecaliJpaApplicationTests - Starting ExplorecaliJpaApplicationTests using Java 21.0.2 with PID 49572 (started by hatue in C:\Users\hatue\Documents\microservicios\explorecali-jpa\explorecali-jpa)
+2026-02-27 19:02:09 DEBUG [main] c.e.e.ExplorecaliJpaApplicationTests - Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-02-27 19:02:09 INFO  [main] c.e.e.ExplorecaliJpaApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-02-27 19:02:11 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27 19:02:11 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 202 ms. Found 3 JPA repository interfaces.
+2026-02-27 19:02:13 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-27 19:02:13 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:d4a139c5-25e5-4901-b14c-e476f11664c9 user=SA
+2026-02-27 19:02:13 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-27 19:02:13 INFO  [main] o.f.c.i.license.VersionPrinter - Flyway Community Edition 9.22.3 by Redgate
+2026-02-27 19:02:13 INFO  [main] o.f.c.i.license.VersionPrinter - See release notes here: https://rd.gt/416ObMi
+2026-02-27 19:02:13 INFO  [main] o.f.c.i.license.VersionPrinter - 
+2026-02-27 19:02:13 INFO  [main] org.flywaydb.core.FlywayExecutor - Database: jdbc:h2:mem:d4a139c5-25e5-4901-b14c-e476f11664c9 (H2 2.2)
+2026-02-27 19:02:13 WARN  [main] o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2026-02-27 19:02:13 INFO  [main] o.f.c.i.s.JdbcTableSchemaHistory - Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-02-27 19:02:13 INFO  [main] o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.028s)
+2026-02-27 19:02:13 INFO  [main] o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-02-27 19:02:13 INFO  [main] o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+2026-02-27 19:02:13 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.1 - CreateTourSchema"
+2026-02-27 19:02:13 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.2 - AddTours"
+2026-02-27 19:02:13 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.3 - CreateTourRatingSchema"
+2026-02-27 19:02:13 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.4 - AddTourRatings"
+2026-02-27 19:02:13 INFO  [main] o.f.core.internal.command.DbMigrate - Successfully applied 4 migrations to schema "PUBLIC", now at version v1.4 (execution time 00:00.027s)
+2026-02-27 19:02:14 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-27 19:02:14 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-27 19:02:14 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-27 19:02:14 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27 19:02:16 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27 19:02:16 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27 19:02:18 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27 19:02:21 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-02-27 19:02:21 INFO  [main] c.e.e.ExplorecaliJpaApplicationTests - Started ExplorecaliJpaApplicationTests in 12.597 seconds (process running for 14.163)
+2026-02-27 19:02:22 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27 19:02:22 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-27 19:02:22 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-27 19:02:26 INFO  [main] c.e.e.ExplorecaliJpaApplication - Starting ExplorecaliJpaApplication using Java 21.0.2 with PID 53316 (C:\Users\hatue\Documents\microservicios\explorecali-jpa\explorecali-jpa\target\classes started by hatue in C:\Users\hatue\Documents\microservicios\explorecali-jpa\explorecali-jpa)
+2026-02-27 19:02:26 DEBUG [main] c.e.e.ExplorecaliJpaApplication - Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-02-27 19:02:26 INFO  [main] c.e.e.ExplorecaliJpaApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-27 19:02:26 INFO  [main] o.s.b.d.c.l.DockerComposeLifecycleManager - Using Docker Compose file 'C:\Users\hatue\Documents\microservicios\explorecali-jpa\explorecali-jpa\compose.yml'
+2026-02-27 19:02:30 INFO  [OutputReader-stderr] o.s.b.docker.compose.core.DockerCli -  Network explorecali-jpa_default  Creating
+2026-02-27 19:02:30 INFO  [OutputReader-stderr] o.s.b.docker.compose.core.DockerCli -  Network explorecali-jpa_default  Created
+2026-02-27 19:02:30 INFO  [OutputReader-stderr] o.s.b.docker.compose.core.DockerCli -  Container explorecali-jpa-mysql-1  Creating
+2026-02-27 19:02:30 INFO  [OutputReader-stderr] o.s.b.docker.compose.core.DockerCli -  Container explorecali-jpa-mysql-1  Created
+2026-02-27 19:02:30 INFO  [OutputReader-stderr] o.s.b.docker.compose.core.DockerCli -  Container explorecali-jpa-mysql-1  Starting
+2026-02-27 19:02:31 INFO  [OutputReader-stderr] o.s.b.docker.compose.core.DockerCli -  Container explorecali-jpa-mysql-1  Started
+2026-02-27 19:02:31 INFO  [OutputReader-stderr] o.s.b.docker.compose.core.DockerCli -  Container explorecali-jpa-mysql-1  Waiting
+2026-02-27 19:02:32 INFO  [OutputReader-stderr] o.s.b.docker.compose.core.DockerCli -  Container explorecali-jpa-mysql-1  Healthy
+2026-02-27 19:02:47 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27 19:02:47 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 3 JPA repository interfaces.
+2026-02-27 19:02:48 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-27 19:02:48 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-27 19:02:48 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-27 19:02:48 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-27 19:02:48 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1770 ms
+2026-02-27 19:02:49 INFO  [main] o.f.c.i.license.VersionPrinter - Flyway Community Edition 9.22.3 by Redgate
+2026-02-27 19:02:49 INFO  [main] o.f.c.i.license.VersionPrinter - See release notes here: https://rd.gt/416ObMi
+2026-02-27 19:02:49 INFO  [main] o.f.c.i.license.VersionPrinter - 
+2026-02-27 19:02:49 INFO  [main] org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://127.0.0.1:5148/mydatabase (MySQL 8.3)
+2026-02-27 19:02:49 WARN  [main] o.f.c.i.database.base.Database - Flyway upgrade recommended: MySQL 8.3 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.0.
+2026-02-27 19:02:49 INFO  [main] o.f.c.i.s.JdbcTableSchemaHistory - Schema history table `mydatabase`.`flyway_schema_history` does not exist yet
+2026-02-27 19:02:49 INFO  [main] o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.035s)
+2026-02-27 19:02:49 INFO  [main] o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table `mydatabase`.`flyway_schema_history` ...
+2026-02-27 19:02:49 INFO  [main] o.f.core.internal.command.DbMigrate - Current version of schema `mydatabase`: << Empty Schema >>
+2026-02-27 19:02:49 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema `mydatabase` to version "1.1 - CreateTourSchema"
+2026-02-27 19:02:50 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema `mydatabase` to version "1.2 - AddTours"
+2026-02-27 19:02:50 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema `mydatabase` to version "1.3 - CreateTourRatingSchema"
+2026-02-27 19:02:50 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema `mydatabase` to version "1.4 - AddTourRatings"
+2026-02-27 19:02:50 INFO  [main] o.f.core.internal.command.DbMigrate - Successfully applied 4 migrations to schema `mydatabase`, now at version v1.4 (execution time 00:00.327s)
+2026-02-27 19:02:50 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-27 19:02:50 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-27 19:02:50 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-27 19:02:50 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27 19:02:50 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-27 19:02:50 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@697b48e4
+2026-02-27 19:02:50 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-27 19:02:52 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27 19:02:52 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27 19:02:52 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27 19:02:54 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-02-27 19:02:54 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-02-27 19:02:54 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27 19:02:54 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-27 19:02:54 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-27 19:02:54 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-27 19:02:54 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-02-27 19:04:27 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.explorecalijpa.ExplorecaliJpaApplicationTests]: ExplorecaliJpaApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-27 19:04:28 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.explorecalijpa.ExplorecaliJpaApplication for test class com.example.explorecalijpa.ExplorecaliJpaApplicationTests
+2026-02-27 19:04:29 INFO  [main] c.e.e.ExplorecaliJpaApplicationTests - Starting ExplorecaliJpaApplicationTests using Java 21.0.2 with PID 7272 (started by hatue in C:\Users\hatue\Documents\microservicios\explorecali-jpa\explorecali-jpa)
+2026-02-27 19:04:29 DEBUG [main] c.e.e.ExplorecaliJpaApplicationTests - Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-02-27 19:04:29 INFO  [main] c.e.e.ExplorecaliJpaApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-02-27 19:04:33 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27 19:04:34 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 241 ms. Found 3 JPA repository interfaces.
+2026-02-27 19:04:35 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-27 19:04:36 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:9061d3b2-7db1-4758-8da6-cc81154671ec user=SA
+2026-02-27 19:04:36 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-27 19:04:36 INFO  [main] o.f.c.i.license.VersionPrinter - Flyway Community Edition 9.22.3 by Redgate
+2026-02-27 19:04:36 INFO  [main] o.f.c.i.license.VersionPrinter - See release notes here: https://rd.gt/416ObMi
+2026-02-27 19:04:36 INFO  [main] o.f.c.i.license.VersionPrinter - 
+2026-02-27 19:04:36 INFO  [main] org.flywaydb.core.FlywayExecutor - Database: jdbc:h2:mem:9061d3b2-7db1-4758-8da6-cc81154671ec (H2 2.2)
+2026-02-27 19:04:36 WARN  [main] o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2026-02-27 19:04:36 INFO  [main] o.f.c.i.s.JdbcTableSchemaHistory - Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-02-27 19:04:36 INFO  [main] o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.055s)
+2026-02-27 19:04:36 INFO  [main] o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-02-27 19:04:36 INFO  [main] o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+2026-02-27 19:04:36 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.1 - CreateTourSchema"
+2026-02-27 19:04:37 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.2 - AddTours"
+2026-02-27 19:04:37 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.3 - CreateTourRatingSchema"
+2026-02-27 19:04:37 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.4 - AddTourRatings"
+2026-02-27 19:04:37 INFO  [main] o.f.core.internal.command.DbMigrate - Successfully applied 4 migrations to schema "PUBLIC", now at version v1.4 (execution time 00:00.056s)
+2026-02-27 19:04:37 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-27 19:04:37 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-27 19:04:37 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-27 19:04:38 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27 19:04:40 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27 19:04:40 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27 19:04:42 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27 19:04:47 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-02-27 19:04:47 INFO  [main] c.e.e.ExplorecaliJpaApplicationTests - Started ExplorecaliJpaApplicationTests in 18.949 seconds (process running for 21.637)
+2026-02-27 19:04:49 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27 19:04:49 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-27 19:04:49 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-27 19:04:54 INFO  [main] c.e.e.ExplorecaliJpaApplication - Starting ExplorecaliJpaApplication using Java 21.0.2 with PID 51072 (C:\Users\hatue\Documents\microservicios\explorecali-jpa\explorecali-jpa\target\classes started by hatue in C:\Users\hatue\Documents\microservicios\explorecali-jpa\explorecali-jpa)
+2026-02-27 19:04:54 DEBUG [main] c.e.e.ExplorecaliJpaApplication - Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-02-27 19:04:54 INFO  [main] c.e.e.ExplorecaliJpaApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-27 19:04:54 INFO  [main] o.s.b.d.c.l.DockerComposeLifecycleManager - Using Docker Compose file 'C:\Users\hatue\Documents\microservicios\explorecali-jpa\explorecali-jpa\compose.yml'
+2026-02-27 19:04:58 INFO  [OutputReader-stderr] o.s.b.docker.compose.core.DockerCli -  Container explorecali-jpa-mysql-1  Created
+2026-02-27 19:04:58 INFO  [OutputReader-stderr] o.s.b.docker.compose.core.DockerCli -  Container explorecali-jpa-mysql-1  Starting
+2026-02-27 19:04:59 INFO  [OutputReader-stderr] o.s.b.docker.compose.core.DockerCli -  Container explorecali-jpa-mysql-1  Started
+2026-02-27 19:04:59 INFO  [OutputReader-stderr] o.s.b.docker.compose.core.DockerCli -  Container explorecali-jpa-mysql-1  Waiting
+2026-02-27 19:04:59 INFO  [OutputReader-stderr] o.s.b.docker.compose.core.DockerCli -  Container explorecali-jpa-mysql-1  Healthy
+2026-02-27 19:05:05 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27 19:05:05 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 112 ms. Found 3 JPA repository interfaces.
+2026-02-27 19:05:06 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-27 19:05:07 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-27 19:05:07 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-27 19:05:07 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-27 19:05:07 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5293 ms
+2026-02-27 19:05:08 INFO  [main] o.f.c.i.license.VersionPrinter - Flyway Community Edition 9.22.3 by Redgate
+2026-02-27 19:05:08 INFO  [main] o.f.c.i.license.VersionPrinter - See release notes here: https://rd.gt/416ObMi
+2026-02-27 19:05:08 INFO  [main] o.f.c.i.license.VersionPrinter - 
+2026-02-27 19:05:08 INFO  [main] org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://127.0.0.1:5531/mydatabase (MySQL 8.3)
+2026-02-27 19:05:09 WARN  [main] o.f.c.i.database.base.Database - Flyway upgrade recommended: MySQL 8.3 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.0.
+2026-02-27 19:05:09 INFO  [main] o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.065s)
+2026-02-27 19:05:09 INFO  [main] o.f.core.internal.command.DbMigrate - Current version of schema `mydatabase`: 1.4
+2026-02-27 19:05:09 INFO  [main] o.f.core.internal.command.DbMigrate - Schema `mydatabase` is up to date. No migration necessary.
+2026-02-27 19:05:09 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-27 19:05:09 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-27 19:05:09 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-27 19:05:10 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27 19:05:10 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-27 19:05:10 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4714f447
+2026-02-27 19:05:10 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-27 19:05:13 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27 19:05:13 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27 19:05:14 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27 19:05:18 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-02-27 19:05:18 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-02-27 19:05:18 INFO  [main] c.e.e.ExplorecaliJpaApplication - Started ExplorecaliJpaApplication in 24.714 seconds (process running for 25.936)
+2026-02-27 19:09:26 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27 19:09:26 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-27 19:09:26 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-27 19:09:39 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.explorecalijpa.ExplorecaliJpaApplicationTests]: ExplorecaliJpaApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-27 19:09:39 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.explorecalijpa.ExplorecaliJpaApplication for test class com.example.explorecalijpa.ExplorecaliJpaApplicationTests
+2026-02-27 19:09:40 INFO  [main] c.e.e.ExplorecaliJpaApplicationTests - Starting ExplorecaliJpaApplicationTests using Java 21.0.2 with PID 14612 (started by hatue in C:\Users\hatue\Documents\microservicios\explorecali-jpa\explorecali-jpa)
+2026-02-27 19:09:40 DEBUG [main] c.e.e.ExplorecaliJpaApplicationTests - Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-02-27 19:09:40 INFO  [main] c.e.e.ExplorecaliJpaApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-02-27 19:09:43 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27 19:09:43 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 238 ms. Found 3 JPA repository interfaces.
+2026-02-27 19:09:46 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-27 19:09:46 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:80db1d3e-86f8-4553-b199-419460da6a70 user=SA
+2026-02-27 19:09:46 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-27 19:09:47 INFO  [main] o.f.c.i.license.VersionPrinter - Flyway Community Edition 9.22.3 by Redgate
+2026-02-27 19:09:47 INFO  [main] o.f.c.i.license.VersionPrinter - See release notes here: https://rd.gt/416ObMi
+2026-02-27 19:09:47 INFO  [main] o.f.c.i.license.VersionPrinter - 
+2026-02-27 19:09:47 INFO  [main] org.flywaydb.core.FlywayExecutor - Database: jdbc:h2:mem:80db1d3e-86f8-4553-b199-419460da6a70 (H2 2.2)
+2026-02-27 19:09:47 WARN  [main] o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2026-02-27 19:09:47 INFO  [main] o.f.c.i.s.JdbcTableSchemaHistory - Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-02-27 19:09:47 INFO  [main] o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.119s)
+2026-02-27 19:09:47 INFO  [main] o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-02-27 19:09:47 INFO  [main] o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+2026-02-27 19:09:47 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.1 - CreateTourSchema"
+2026-02-27 19:09:47 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.2 - AddTours"
+2026-02-27 19:09:47 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.3 - CreateTourRatingSchema"
+2026-02-27 19:09:47 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1.4 - AddTourRatings"
+2026-02-27 19:09:47 INFO  [main] o.f.core.internal.command.DbMigrate - Successfully applied 4 migrations to schema "PUBLIC", now at version v1.4 (execution time 00:00.064s)
+2026-02-27 19:09:48 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-27 19:09:48 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-27 19:09:48 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-27 19:09:49 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27 19:09:51 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27 19:09:51 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27 19:09:53 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27 19:09:57 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-02-27 19:09:57 INFO  [main] c.e.e.ExplorecaliJpaApplicationTests - Started ExplorecaliJpaApplicationTests in 18.039 seconds (process running for 20.367)
+2026-02-27 19:09:59 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27 19:09:59 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-27 19:09:59 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-27 19:10:05 INFO  [main] c.e.e.ExplorecaliJpaApplication - Starting ExplorecaliJpaApplication using Java 21.0.2 with PID 53300 (C:\Users\hatue\Documents\microservicios\explorecali-jpa\explorecali-jpa\target\classes started by hatue in C:\Users\hatue\Documents\microservicios\explorecali-jpa\explorecali-jpa)
+2026-02-27 19:10:05 DEBUG [main] c.e.e.ExplorecaliJpaApplication - Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-02-27 19:10:05 INFO  [main] c.e.e.ExplorecaliJpaApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-27 19:10:05 INFO  [main] o.s.b.d.c.l.DockerComposeLifecycleManager - Using Docker Compose file 'C:\Users\hatue\Documents\microservicios\explorecali-jpa\explorecali-jpa\compose.yml'
+2026-02-27 19:10:09 INFO  [OutputReader-stderr] o.s.b.docker.compose.core.DockerCli -  Container explorecali-jpa-mysql-1  Created
+2026-02-27 19:10:09 INFO  [OutputReader-stderr] o.s.b.docker.compose.core.DockerCli -  Container explorecali-jpa-mysql-1  Starting
+2026-02-27 19:10:10 INFO  [OutputReader-stderr] o.s.b.docker.compose.core.DockerCli -  Container explorecali-jpa-mysql-1  Started
+2026-02-27 19:10:10 INFO  [OutputReader-stderr] o.s.b.docker.compose.core.DockerCli -  Container explorecali-jpa-mysql-1  Waiting
+2026-02-27 19:10:11 INFO  [OutputReader-stderr] o.s.b.docker.compose.core.DockerCli -  Container explorecali-jpa-mysql-1  Healthy
+2026-02-27 19:10:16 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27 19:10:16 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 115 ms. Found 3 JPA repository interfaces.
+2026-02-27 19:10:18 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-02-27 19:10:18 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-27 19:10:18 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-27 19:10:18 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-27 19:10:18 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4658 ms
+2026-02-27 19:10:20 INFO  [main] o.f.c.i.license.VersionPrinter - Flyway Community Edition 9.22.3 by Redgate
+2026-02-27 19:10:20 INFO  [main] o.f.c.i.license.VersionPrinter - See release notes here: https://rd.gt/416ObMi
+2026-02-27 19:10:20 INFO  [main] o.f.c.i.license.VersionPrinter - 
+2026-02-27 19:10:20 INFO  [main] org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://127.0.0.1:31683/mydatabase (MySQL 8.3)
+2026-02-27 19:10:20 WARN  [main] o.f.c.i.database.base.Database - Flyway upgrade recommended: MySQL 8.3 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.0.
+2026-02-27 19:10:20 INFO  [main] o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.060s)
+2026-02-27 19:10:20 INFO  [main] o.f.core.internal.command.DbMigrate - Current version of schema `mydatabase`: 1.4
+2026-02-27 19:10:20 INFO  [main] o.f.core.internal.command.DbMigrate - Schema `mydatabase` is up to date. No migration necessary.
+2026-02-27 19:10:20 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-27 19:10:20 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-27 19:10:20 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-27 19:10:21 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27 19:10:21 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-27 19:10:21 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@165824f5
+2026-02-27 19:10:21 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-27 19:10:23 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27 19:10:23 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27 19:10:24 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27 19:10:27 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-02-27 19:10:27 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-02-27 19:10:27 INFO  [main] c.e.e.ExplorecaliJpaApplication - Started ExplorecaliJpaApplication in 22.498 seconds (process running for 23.975)
+2026-02-27 19:34:15 INFO  [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-27 19:34:15 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-27 19:34:15 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 36 ms
+2026-02-27 19:34:16 WARN  [http-nio-8081-exec-1] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 22003
+2026-02-27 19:34:16 ERROR [http-nio-8081-exec-1] o.h.e.jdbc.spi.SqlExceptionHelper - Value 'Central Coast' is outside of valid range for type java.lang.Byte
+2026-02-27 19:34:16 ERROR [http-nio-8081-exec-1] c.e.e.e.GlobalExceptionHandler - Caught Exception
+org.springframework.dao.DataIntegrityViolationException: Could not extract column [9] from JDBC ResultSet [Value 'Central Coast' is outside of valid range for type java.lang.Byte] [n/a]; SQL [n/a]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:293)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy164.findAll(Unknown Source)
+	at org.springframework.data.repository.support.PagingAndSortingRepositoryInvoker.invokeFindAll(PagingAndSortingRepositoryInvoker.java:68)
+	at org.springframework.data.rest.core.support.UnwrappingRepositoryInvokerFactory$UnwrappingRepositoryInvoker.invokeFindAll(UnwrappingRepositoryInvokerFactory.java:127)
+	at org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResource(RepositoryEntityController.java:191)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.hibernate.exception.DataException: Could not extract column [9] from JDBC ResultSet [Value 'Central Coast' is outside of valid range for type java.lang.Byte] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:55)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.getCurrentRowValue(JdbcValuesResultSetImpl.java:310)
+	at org.hibernate.sql.results.internal.RowProcessingStateStandardImpl.getJdbcValue(RowProcessingStateStandardImpl.java:119)
+	at org.hibernate.sql.results.graph.basic.BasicResultAssembler.extractRawValue(BasicResultAssembler.java:52)
+	at org.hibernate.sql.results.graph.basic.BasicResultAssembler.assemble(BasicResultAssembler.java:59)
+	at org.hibernate.sql.results.graph.DomainResultAssembler.assemble(DomainResultAssembler.java:33)
+	at org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.extractConcreteTypeStateValues(AbstractEntityInitializer.java:1081)
+	at org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.initializeEntityInstance(AbstractEntityInitializer.java:838)
+	at org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.initializeEntity(AbstractEntityInitializer.java:813)
+	at org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.initializeInstance(AbstractEntityInitializer.java:799)
+	at org.hibernate.sql.results.internal.InitializersList.initializeInstance(InitializersList.java:70)
+	at org.hibernate.sql.results.internal.StandardRowReader.coordinateInitializers(StandardRowReader.java:109)
+	at org.hibernate.sql.results.internal.StandardRowReader.readRow(StandardRowReader.java:86)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:203)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:33)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:209)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:83)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:76)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:65)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$2(ConcreteSqmSelectQueryPlan.java:137)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:362)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:303)
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.doList(QuerySqmImpl.java:509)
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:427)
+	at org.hibernate.query.Query.getResultList(Query.java:120)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.readPage(SimpleJpaRepository.java:697)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:449)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:426)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 62 common frames omitted
+Caused by: java.sql.SQLDataException: Value 'Central Coast' is outside of valid range for type java.lang.Byte
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:115)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:98)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:90)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:64)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:74)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:92)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getObject(ResultSetImpl.java:1356)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getByte(ResultSetImpl.java:714)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getByte(HikariProxyResultSet.java)
+	at org.hibernate.type.descriptor.jdbc.TinyIntJdbcType$2.doExtract(TinyIntJdbcType.java:91)
+	at org.hibernate.type.descriptor.jdbc.BasicExtractor.extract(BasicExtractor.java:44)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.getCurrentRowValue(JdbcValuesResultSetImpl.java:302)
+	... 108 common frames omitted
+Caused by: com.mysql.cj.exceptions.NumberOutOfRange: Value 'Central Coast' is outside of valid range for type java.lang.Byte
+	at com.mysql.cj.result.ByteValueFactory.createFromBytes(ByteValueFactory.java:114)
+	at com.mysql.cj.result.ByteValueFactory.createFromBytes(ByteValueFactory.java:46)
+	at com.mysql.cj.protocol.a.MysqlTextValueDecoder.decodeByteArray(MysqlTextValueDecoder.java:159)
+	at com.mysql.cj.protocol.result.AbstractResultsetRow.decodeAndCreateReturnValue(AbstractResultsetRow.java:136)
+	at com.mysql.cj.protocol.result.AbstractResultsetRow.getValueFromBytes(AbstractResultsetRow.java:244)
+	at com.mysql.cj.protocol.a.result.ByteArrayRow.getValue(ByteArrayRow.java:91)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getObject(ResultSetImpl.java:1251)
+	... 113 common frames omitted
